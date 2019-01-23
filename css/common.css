@@ -1,0 +1,128 @@
+
+*{
+box-sizing: border-box;
+/*为元素设定的宽度和高度决定了元素的边框盒。
+就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
+通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。*/
+max-height: 100000px; /* 在X5新内核Blink中，在排版页面的时候，会主动对字体进行放大，会检测页面中的主字体，当某一块字体在我们的判定规则中，认为字号较小，并且是页面中的主要字体，就会采取主动放大的操作。然而这不是我们想要的，可以采取给最大高度解决 */
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th,textarea, td {
+  border: 0 none;
+  font-size: inherit;/*规定应该从父元素继承字体尺寸。*/
+  color: inherit;/*规定应该从父元素继承字体尺寸。*/
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;/*默认。元素放置在父元素的基线上。*/
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+em, strong {
+  font-style: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img{vertical-align:bottom}
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+    line-height: 1.5;
+    color: #333;
+    
+    font-size: 0.24rem;
+}
+#container {
+  position: relative;
+  margin: 0 auto;
+  background: #f3f3f3;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 991542 */
+  src: url('//at.alicdn.com/t/font_991542_igs5i1knsl8.eot');
+  src: url('//at.alicdn.com/t/font_991542_igs5i1knsl8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_991542_igs5i1knsl8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_991542_igs5i1knsl8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_991542_igs5i1knsl8.svg#iconfont') format('svg');
+}
+.iconfont {
+          font-family:"iconfont" !important;
+          font-size:0.65rem;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+.footer {  
+  position: fixed;
+  z-index: 50;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 1.53rem;
+  display: flex;
+  border-top: 0.01rem solid #999999;
+  background: #fff;
+}
+.footer ul{display: flex;text-align: center;flex:1}
+.footer ul li{flex: 1;font-size: 0.24rem;padding-top: 0.2rem;}
+.footer ul li.active{color:#f45152 ;}
+.footer ul li span{display: block;line-height: 1.1;}
+.footer ul li.center{margin-top: -0.76rem;border:0.06rem solid #fff;height: 1.74rem;min-width:1.74rem;max-width:1.53rem;border-radius: 100rem;
+ display: flex;
+ padding-top:0;
+ justify-content: center;
+ align-items: center;
+ font-size: 0.28rem;
+ background: #f45152;
+ font-weight: bold;
+ color: #fff;
+ box-shadow: 0 0 0 0.02rem #f45152;
+ }
+ 
+ h3.title{
+	 font-size: 0.42rem;
+	 line-height: 1.2rem;
+	 text-align: center;
+	 background: #f35252;
+	 color: #fff;
+	 position: fixed;
+	 width: 100%;
+	 top: 0;
+	 z-index: 999;
+
+ }
+ h3.title span.iconfont{
+	
+	
+	 position: absolute;
+	 left:0.36rem;
+	 top:0;
+	
+ }
+
+ /*动画*/
+ .skyActionPingyi
+ {
+ animation-name:skyActionPingyi;
+ animation-duration: 0.5s;
+ animation-timing-function: linear;
+ animation-delay: 0s;
+ animation-iteration-count: infinite;
+ animation-direction:normal;
+ animation-play-state: running;
+ animation-iteration-count:1;
+ animation-fill-mode: forwards;
+ }
+ @keyframes skyActionPingyi
+ {
+ 0%{transform:translate(100px,0px);
+ opacity:0.1}
+ 50%{transform:translate(50px,0px);
+ opacity:1}
+ 100%{transform:translate(0px,0px);opacity:1}
+ }

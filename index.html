@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style>
+			html{height:100%}
+			body{height:100%}
+			#container{height:100%;display: flex;flex-direction: column;
+			font-family: "microsoft yahei";
+			color: #767777;
+			font-size:14px;
+			line-height: 22px;
+			}
+			#header{
+				background: #e2e3e5;
+				height:38px;
+				border-bottom:1px solid #d5d6d7;
+				line-height: 38px;
+				display: flex;
+				align-items: center;text-shadow: 1px 1px 1px #fff;
+				color: rgb(51,51,51);
+			}
+			#main{display: flex;flex: 1;}
+			#leftBar{
+				background:#f2f3f4;
+				min-width:240px;
+				border-right:1px solid #d5d6d7;
+			}
+			#content{
+				background:#FFFFFF;
+				flex:1;
+			}
+			#rightBar{
+				background:#f2f3f4;
+				min-width:240px;
+				border-left:1px solid #d5d6d7;
+			}
+			#footer{
+				height:28px;
+				border-top:1px solid #d5d6d7;
+				display: flex;
+				align-items: center;
+				padding: 0 10px;
+				text-shadow: 1px 1px 1px #FFF;
+			}
+			.line{
+				height:38px;
+				border-bottom:1px solid #d5d6d7;
+				background:#f2f3f4;
+				line-height: 38px;
+				
+				display: flex;
+				text-shadow: 1px 1px 1px #fff;
+			}
+			
+			#header>.iconfont{font-size: 20px;padding-right: 20px;padding-left: 10px;
+			
+			}
+			#header>p{text-align: right;font-size: 20px;display: flex;align-items: center;}
+			#header>p .iconfont{font-size: 22px;padding-left: 20px;}
+			.headCenter{flex:1}
+			.userName{font-size: 14px;}
+			.headTitle{
+				margin-left: 10px;
+				background: #1373fb;
+				height:22px;
+				color: #fff;
+				line-height: 22px;
+				font-size: 12px;
+				padding: 0px 6px;
+				font-weight: bold;
+				text-shadow: none;
+			}
+			.nameTitle{}
+			#rightBarTop ul{
+				display: flex;
+				flex:1;
+			}
+			#rightBarTop ul li{flex:1;text-align: center;}
+			#rightBarTop  li{position: relative;color:rgb(147,147,147)}
+			#rightBarTop  li:after{
+				content: "";
+				border-right:1px solid rgb(217,218,219);
+				position: absolute;
+				left:0;
+				width:1;
+				height:10px;
+				margin-top:14px;
+			}
+			#rightBarTop  li:nth-child(1):after{
+				display: none;
+			}
+			#rightBarTop  li.action{
+				color:rgb(51,51,51);
+				
+			}
+			#leftBarTop{padding-left: 10px;display: flex;align-items: center;}
+			#leftBarTop p{flex:1;text-align: right;padding-right: 10px;}
+			#leftBarTop p span{font-size: 18px;padding-right: 5px;}
+			
+			#contentTop{padding-left: 10px;display: flex;align-items: center;padding-right: 10px;}
+			#contentTop p{flex:1;display: flex;}
+			#contentTop p .iconfont{font-size: 14px;border:1px solid rgb(213,214,215);height:28px;line-height: 28px;display: block;margin:5px;width:28px;text-align: center;}
+			#contentTop input{height:28px;line-height: 28px;border-radius: 4px;border:1px solid rgb(213,214,215)}
+			#contentTop>.iconfont{font-size: 20px;border:1px solid rgb(213,214,215);height:28px;line-height: 28px;display: block;margin:5px;width:28px;text-align: center;}
+			#leftBar{line-height: 32px;font-size: 14px;color: rgb(64,64,64);}
+			#leftBar .iconfont{padding-left:10px;padding-right: 5px;font-size:16px;color: rgb(109,109,109);}
+			#leftBar li{display: flex;align-items: center;padding-right: 10px;border-radius:0 5px  5px  0;}
+			#leftBar .action{
+				background: rgb(226,226,226);
+			}
+			.leftBarTitle{flex:1;}
+			#leftBar ul,#leftBar dl{padding-bottom: 10px;padding-top: 10px;padding-right: 10px;}
+			#leftBar li .leftBarEnd{font-size:12px;color:rgb(169,169,169);}
+			#leftBar dt,#leftBar h5{
+				font-size: 14px;color:rgb(169,169,169);
+				padding-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<span class="iconfont">&#xe670;</span>
+				<span class="nameTitle">SKYESTSTUDIO Admin beta1</span>
+				<span class="headTitle">CMS</span>
+				<span class="headCenter"></span>
+				<p>
+					<span class="iconfont">&#xe667;</span>
+					
+					<span class="iconfont">&#xe64e;</span>
+					<span class="userName">Admin</span>
+					<span class="iconfont">&#xe64f;</span>
+				</p>
+			</div>
+			<div id="main">
+				<div id="leftBar">
+					<div class="line" id="leftBarTop">
+						<span>MENU</span><span class="iconfont">&#xe665;</span>
+						<p>
+						<span class="iconfont">&#xe692;</span>
+						<span class="iconfont">&#xe671;</span>
+						</p>
+					</div>
+					<ul>
+						<li class="action">
+							<span class="iconfont">&#xe7cb;</span>
+							<span class="leftBarTitle">TYPE</span>
+							<span class="leftBarEnd">4000</span>
+						</li>
+						<li>
+							<span class="iconfont">&#xe7cb;</span>
+							<span class="leftBarTitle">TYPE</span>
+							<span class="leftBarEnd">4000</span>
+						</li>
+						<li>
+							<span class="iconfont">&#xe69e;</span>
+							<span class="leftBarTitle">TYPE</span>
+							<span  class="leftBarEnd">4000</span>
+						</li>
+					</ul>
+					<dl>
+						<dt>MY Menu</dt>
+						<dd>
+							<span class="iconfont">&#xe69c;</span>
+							<span class="leftBarTitle">TYPE</span>
+							<span class="leftBarEnd">4000</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt>MY Menu</dt>
+						<dd>
+							<h5>MY Menu</h5>
+							<ol>
+								<li></li>
+							</ol>
+						</dd>
+					</dl>
+				</div>
+				<div id="content">
+					<div class="line" id="contentTop">
+						<p>
+							<span class="iconfont">&#xe652;</span>
+							<span class="iconfont">&#xe65a;</span>
+							<span>Content</span>
+						</p>
+						
+						<span class="iconfont">&#xe642;</span>
+						<span class="iconfont">&#xe690;</span>
+						<input type="text">
+					</div>
+				</div>
+				<div id="rightBar">
+					<div class="line"  id="rightBarTop">
+						<ul>
+							<li class="action">View</li>
+							<li>CheckED</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="footer">statusBar</div>
+		</div>
+	</body>
+</html>
